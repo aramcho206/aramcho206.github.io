@@ -1,135 +1,53 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,100' rel='stylesheet' type='text/css'>
+<link href="style.css" type="text/css" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <!--<title>My Company</title> -->
   </head>
   <body>
-    <h1><font color="black">Aram's Webpage</font></h1>
-    <div id="content"></div>
+    <div class="header">
+      <div class="container">
+        <h1>Innovation Cloud</h1>
+        <p>Connect your ideas globally</p>
+        <a class="btn" href="#">Learn More</a>
+      </div>
+    </div>
 
-    
-    <script>
-      const pageContent = document.getElementById("content")
+    <div class="nav">
+      <div class="container">
+        <ul>
+          <li>Register</li>
+          <li>Schedule</li>
+          <li>Sponsors</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
 
-      window.onload = function() {
-        const currentPath = window.location.pathname
-        console.log('current path = ', currentPath)
-        if (currentPath === '/') {
-          pageContent.innerHTML = `<h1><font color="white">Root Page</font></h1> 
-          <title>Root</title>
+    <div class="main">
+      <div class="container">
+        <img src="https://content.codecademy.com/projects/innovation-cloud/cloud.svg" height="128" width="196">
+        <h2>The Innovation Cloud Conference</h2>
+        <p>Connect with the best minds across a wide range of industries to share ideas and brainstorm new solutions to challenging problems.</p>
+        <p>Hear industry leaders talk about what worked (and what didn't) so that you can save time on your most challenging projects.</p>
+        <p>Learn about the latest research and technologies that you can use immediately to invent the future.</p>
+      </div>
+    </div>
 
-          <style> 
-            body {
-              background-image: url('root.jpg');
-              background-repeat: no-repeat;
-              background-attachment: fixed;
-              background-size: 100% 100%;
-              }
-          </style>
+    <div class="jumbotron">
+      <div class="container">
+        <h2>Stay Connected</h2>
+        <p>Receive weekly insights from industry insiders.</p>
+        <a class="btn" href="#">Join</a>
+      </div>
+    </div>
 
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="http://aramcho206.github.io/home.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="http://aramcho206.github.io/about.html">About</a>
-                </li>
-                </ul>
-            </div>
-          </nav>
-
-
-
-
-
-              `
-        } else if (currentPath === '/index.html') {
-          pageContent.innerHTML = `<h1><font color="white">Root Page</font></h1> 
-          <title>Root</title>
-
-          <style> 
-            body {
-              background-image: url('root.jpg');
-              background-repeat: no-repeat;
-              background-attachment: fixed;
-              background-size: 100% 100%;
-              }
-          </style>
-
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="http://aramcho206.github.io/home.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="http://aramcho206.github.io/about.html">About</a>
-                </li>
-                </ul>
-            </div>
-          </nav>
-
-
-
-
-
-              `
-        } else if (currentPath === '/about.html') {
-          pageContent.innerHTML = `<h1><font color="white">Root Page</font></h1> 
-          <title>Root</title>
-
-          <style> 
-            body {
-              background-image: url('root.jpg');
-              background-repeat: no-repeat;
-              background-attachment: fixed;
-              background-size: 100% 100%;
-              }
-          </style>
-
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="http://aramcho206.github.io/home.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="http://aramcho206.github.io/about.html">About</a>
-                </li>
-                </ul>
-            </div>
-          </nav>
-
-              `
-        }
-        
-      }
-    </script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <div class="footer">
+      <div class="container">
+        <p>&copy; Innovation Cloud Conference</p>
+      </div>
+    </div>
   </body>
 </html>
